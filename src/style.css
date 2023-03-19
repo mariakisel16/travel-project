@@ -1,7 +1,54 @@
-h1 {
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+body {
   font-family: "Poppins", sans-serif;
-  font-weight: 300;
+}
+header h1 {
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 1.5;
+}
+header h2 {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 1.5;
+  letter-spacing: 5px;
 }
 header {
-  background-image: url("../images/Atlanta-Georgia-USA.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../images/georgia.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 100px 10px;
+  text-decoration: none;
+}
+h3 {
+  font-weight: 900;
+  font-size: 100px;
+}
+header a {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 3px;
+  text-decoration: none;
+  color: black;
+  padding: 16px 32px;
+  background: white;
+  display: inline-block;
+}
+@media (max-width: 900px) {
+  header h1 {
+    font-size: 24px;
+  }
+  header h2 {
+    font-size: 20px;
+  }
+  header a {
+    padding: 10px 15px;
+  }
 }
