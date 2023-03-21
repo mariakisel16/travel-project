@@ -93,6 +93,9 @@ header a {
     grid-template-columns: 1fr;
     grid-gap: 32px;
   }
+  .main-video {
+    grid-template-columns: 1fr;
+  }
 }
 footer {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
