@@ -1,11 +1,18 @@
 .container {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
+  text-align: center;
 }
 .grid {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
-  margin-left: 10px;
+  grid-gap: 64px;
+}
+.grid-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+  margin-top: 0;
 }
 
 body {
@@ -57,13 +64,24 @@ header a {
   header a {
     padding: 10px 15px;
   }
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+    padding-left: 30px;
+  }
+  .grid-main {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+  section {
+  }
 }
 footer {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("../images/savannah.png");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 100px 0;
+
   color: white;
 }
 footer h3 {
@@ -89,4 +107,33 @@ footer li {
 footer a {
   color: white;
   opacity: 0.7;
+}
+section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+main h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  color: #272044;
+}
+main h3 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 5px;
+  color: #272044;
+  display: block;
+  text-align: center;
+  margin-top: 50px;
+}
+main img {
+  margin-top: 48px;
+}
+main p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
 }
