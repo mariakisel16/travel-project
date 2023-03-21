@@ -22,7 +22,15 @@
 .images-cards {
   max-width: 100%;
 }
-
+.video {
+  width: 100%;
+  aspect-ratio: 21/9;
+}
+.main-video {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
 body {
   font-family: "Poppins", sans-serif;
 }
